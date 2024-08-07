@@ -1,0 +1,39 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.accordion {
+    display: flex;
+    width:auto;
+    overflow: hidden;
+    padding: 0 50px;
+}
+
+.accordion-item {
+    flex: 1;
+    gap: 20px;
+    border-right: 1px solid #ccc;
+    overflow: hidden;
+    transition: flex 0.3s;
+}
+
+.accordion-item:last-child {
+    border-right: none;
+}
+
+.accordion-header {
+    background-color: #f7f7f7;
+    padding: 15px;
+    cursor: pointer;
+    font-weight: bold;
+    text-align: center;
+    writing-mode: vertical-lr; /* Rotate text for horizontal layout */
+    /* transform: rotate(180deg);  */
+    /* opacity: 0.5; */
+}
+
+.accordion-content {
+    display: none;
+    padding: 15px;
+    background-color: #fff;
+}
